@@ -196,9 +196,9 @@ const handleSubmit = async (e) => {
             )}
 
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 pl-20">
+                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
                     <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
-                        <tr>
+                        <tr >
                             <th scope="col" className="px-2 py-2 bg-gray-50 dark:bg-gray-800">
                                 Course
                             </th>
@@ -221,7 +221,7 @@ const handleSubmit = async (e) => {
                     </thead>
                     <tbody>
                     {courses.map((course) => (
-    <tr key={course._id} className="border-b border-gray-200 dark:border-gray-700">
+    <tr key={course._id} className="border-b border-gray-200 dark:border-gray-700 ">
         <td className="px-2 py-2 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
             {course.courseName}
         </td>

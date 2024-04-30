@@ -1,7 +1,8 @@
 import express from "express";
 const router=express.Router()
 import { Login,getStudentInfo,UpdateStudentInfo,GetTutor,AddTutor,UpdateTutor,GetCourse,
-    AddCourse,UpdateCourse, DeleteCourse,GetApplication,ApplicationReject,ApplicationAccept } from "../controller/adminController.js";
+    AddCourse,UpdateCourse, DeleteCourse,GetApplication,ApplicationReject,ApplicationAccept 
+    ,getApplication,rejectApplication,acceptApplication} from "../controller/adminController.js";
 
 
 router.post('/login',Login)
@@ -19,10 +20,15 @@ router.post('/addCourse',AddCourse)
 router.put('/updateCourse/:id',UpdateCourse)
 router.delete('/deleteCourse/:id',DeleteCourse)
 
-router.get('/getApplication',GetApplication)
+router.get('/getApplication',getApplication)
 router.post('/reject',ApplicationReject)
 router.post('/accept',ApplicationAccept)
 router.put('/updateStudent/:id',UpdateStudentInfo)
+
+router.get('/getApplication',getApplication)
+router.put('/reject/:id',rejectApplication)
+router.put('/accept/:id',acceptApplication)
+
 
 
 

@@ -15,11 +15,11 @@ const Login=() =>{
     const studentInfo=useSelector((state)=>state.auth)
    console.log(studentInfo,'studentInfo in login component');
 
-    useEffect(()=>{
-        if(studentInfo!==null  ||studentInfo!==undefined ||studentInfo!==''){
-            navigate('/home')
-        }
-    },[studentInfo])
+    // useEffect(()=>{
+    //     if(studentInfo!==null  ||studentInfo!==undefined ||studentInfo!==''){
+    //         navigate('/home')
+    //     }
+    // },[studentInfo])
 
 // Inside submitHandler function
 const submitHandler = async (e) => {

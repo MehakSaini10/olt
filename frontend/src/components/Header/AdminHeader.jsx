@@ -4,13 +4,15 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { useNavigate } from 'react-router-dom';
 
 function AdminHeader() {
   // const [openNav, setOpenNav] = useState(false);
-
+let navigate=useNavigate()
   // const [isLoggedIn, setIsLoggedIn] = useState(false); // Example state for authentication status
 
   const handleLogout = () => {
+    navigate('/admin/login')
     // Handle logout logic here
     setIsLoggedIn(false); // Example: Reset authentication status
   };

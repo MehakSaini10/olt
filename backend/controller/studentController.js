@@ -116,11 +116,14 @@ const displayTutors=async(req,res)=>{
     }
 }
 
+
+
 export {
     Register,
     authStudent,
     getCourseName,
     submitApplication,
     displayCourses,
-    displayTutors
+    displayTutors,
+    
 }
